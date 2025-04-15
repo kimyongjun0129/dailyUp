@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/variable.css" />
-    <link rel="stylesheet" href="./css/category.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>daily up</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 class="title">Daily Up</h1>
+    </div>
+    <div class="container">
+      <div class="level font_25">Level 5</div>
+      <div class="experience__bar">
+        <div class="experience__fill"></div>
+      </div>
+      <div class="experience__text font_25">260/500</div>
+    </div>
+    <div class="container">
+      <h2 class="quest__title">Today's Quest</h2>
+      <div class="quest__box font_25">
+        <span>Nothing</span>
+      </div>
+      <button
+        class="quest__btn font_25"
+        onclick="location.href='./html/category.html'"
+      >
+        + Add Goal
+      </button>
+    </div>
+  </body>
   <script src="./js/index.js"></script>
 </html>
