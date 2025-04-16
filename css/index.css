@@ -53,13 +53,41 @@ body {
 
 .quest__box {
     border-radius: 10px;
-    height: 150px;
-    border: 2px #E5E5E5 solid;
     margin-bottom: 20px;
+    height:180px;
+    overflow: scroll;
+}
+
+.quest__box::-webkit-scrollbar{
+    display:none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.quest__box label {
+    border: 2px #E5E5E5 solid ;
+    border-radius: 8px;
+    line-height: 0.8;
+    padding:12px;
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-bottom: 12px;
+
+    font-size:25px;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.quest__box input[type="checkbox"]:checked + label {
+    border:2px #4C6565 solid;
+    background-color: #4C6565;
+    color: white;
+    text-decoration: line-through;
 }
 
 .quest__btn {
