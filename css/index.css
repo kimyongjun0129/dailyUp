@@ -37,7 +37,7 @@ body {
 .experience__fill {
     background-color: #4C6565;
     height: 30px;
-    width:70%;
+    width:0;
     border-radius: 40px;
 }
 
