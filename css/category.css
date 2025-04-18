@@ -1,3 +1,81 @@
 body {
-    background-color: var(--main-bg-color);
+    padding:25px;
+    background-color: #FEFEFE;
+}
+
+.container {
+    padding:0px;
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.backBtn:hover {
+    scale: 1.5;
+}
+
+.title {
+    font-size: 30px; 
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.quest__box {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height:350px;
+    overflow: scroll;
+}
+
+.quest__box::-webkit-scrollbar{
+    display:none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.quest__box label {
+    border: 2px #E5E5E5 solid ;
+    border-radius: 8px;
+    line-height: 0.8;
+    padding:12px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 12px;
+
+    font-size:25px;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.quest__box input[type="checkbox"]:checked + label {
+    border:2px #4C6565 solid;
+    background-color: #4C6565;
+    color: white;
+}
+
+.quest__btn {
+    all:unset;
+    border:2px #4C6565 solid;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding:15px;
+
+    line-height: 0.8;
+}
+
+.quest__btn:hover,
+:focus  {
+    background-color: #4C6565;
+    color:white;
+}
+
+.font_25 {
+    font-size: 25px;
 }
